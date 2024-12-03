@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRill_8EY8JxpXgRCnHOCBxq3_AbXZ4q9YvXw&s"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+
+            /* border: 1px solid black; */
+
+        }
+
+        .count {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .mainbill {
+            height: auto;
+            width: 100%;
+            border: 1px solid black;
+            background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* margin-top: 50px;
+             */
+             padding: 50px;
+        }
+
+        .childbill {
+            height: auto;
+            width: 600px;
+            /* border: 1px solid black; */
+            background: #D8D2C2;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+        }
+
+        .font {
+            font-family: "Yuji Mai", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div
+        style="height: auto; width: 100%; border: 1px solid navy;display: flex;align-items: center; justify-content: center; background-color: #B17457; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px; padding: 30px ;">
+        <div  data-aos="fade-down"
+        data-aos-offset="300"
+        data-aos-delay="80"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out" style="height: 700px; width: 50%;  background-color: #D8D2C2; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; border-radius: 30px;">
+            <h4 class="m-0 p-3 text-center font" style="font-weight: 900; ">Customer Fill Some Details</h4>
+
+            <div
+                style="height: 150px; width: 100%; margin-top: 20px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px;">
+                <label for="name" style="font-weight: 800;">Name:-</label>
+                <input
+                    style="padding: 15px; border-radius: 30px;width: 50%; border: none; outline: none; color: black; font-weight: 800; background: #FAF7F0;"
+                    id="Customername" type="text" placeholder="Enter Your Name...">
+
+            </div>
+            <div
+                style="height: 150px; width: 100%; margin-top: 20px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px;">
+                <label for="name" style="font-weight: 800;">City :-</label>
+                <input
+                    style="padding: 15px; border-radius: 30px;width: 50%; border: none; outline: none; color: black; font-weight: 800; background: #FAF7F0;"
+                    id="Customercity" type="text" placeholder="Enter Your City...">
+
+            </div>
+            <div
+                style="height: 150px; width: 100%; margin-top: 20px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px;">
+                <label for="name" style="font-weight: 800;">Mobile Number:-</label>
+                <input
+                    style="padding: 15px; border-radius: 30px;width: 50%; border: none; outline: none; color: black; font-weight: 800; background: #FAF7F0;"
+                    id="Customernumber" type="number" placeholder="Enter Your Number...">
+
+            </div>
+            <div
+                style="height: 100px; width: 100%; margin-top: 20px; display: flex; align-items: center; justify-content: center;">
+                <button
+                    style="padding: 15px; font-size: 15px; background: #FAF7F0; border: none; outline: none;  border-radius: 30px; font-weight: 900;"
+                    id="submit1">Submit</button>
+            </div>
+        </div>
+    </div>
+    <div
+        style="display: flex; justify-content: space-around; align-items: center; min-height: auto; width: 100%;flex-wrap: wrap; background: #4A4947;padding: 50px;">
+        <div data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-delay="80"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out" class="card" style="width: 18rem; margin-top: 30px; box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
+            <img src="https://avatars.mds.yandex.net/i?id=75515bb95e73aabff559a331cdf637c7eb2a2598-9173887-images-thumbs&n=13"
+                class="card-img-top img-thumbnail" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Apple</h5>
+                <p class="card-text">150 per 1kg</p>
+                <div class="count">
+                    <button class="p-2" id="incre1">+</button>
+                    <p class="m-0" id="count1">0</p>
+                    <button class="p-2" id="decre1">-</button>
+                </div>
+
+                <button id="click1" class="btn btn-primary mt-2">Buy Now</button>
+            </div>
+        </div>
+
+        <div data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-delay="80"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out" class="card" style="width: 18rem;  margin-top: 30px; box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
+            <img src="https://avatars.mds.yandex.net/i?id=9c180acae2e610786ed4e7c6341c5e64f2c4d2f4-3995454-images-thumbs&n=13"
+                class="card-img-top img-thumbnail" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Banana</h5>
+                <p class="card-text">100 per 1kg</p>
+                <div class="count">
+                    <button class="p-2" id="incre2">+</button>
+                    <p class="m-0" id="count2">0</p>
+                    <button class="p-2" id="decre2">-</button>
+                </div>
+
+                <button id="click2" class="btn btn-primary mt-2">Buy Now</button>
+            </div>
+        </div>
+
+        <div data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-delay="80"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out" class="card" style="width: 18rem;  margin-top: 30px; box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
+            <img src="https://avatars.mds.yandex.net/i?id=3c22bf6deceb757f35a3a8b25607b703ebb5986d-8244444-images-thumbs&n=13"
+                class="card-img-top img-thumbnail" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Kiwi</h5>
+                <p class="card-text">200 per 1kg</p>
+                <div class="count">
+                    <button class="p-2" id="incre3">+</button>
+                    <p class="m-0" id="count3">0</p>
+                    <button class="p-2" id="decre3">-</button>
+                </div>
+
+                <button id="click3" class="btn btn-primary mt-2">Buy Now</button>
+            </div>
+        </div>
+
+        <div data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-delay="80"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out" class="card" style="width: 18rem;  margin-top: 30px; box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
+            <img src="https://avatars.mds.yandex.net/i?id=387e86cb9767cf29f1c0f9855fab63627ce4c34f-9241287-images-thumbs&n=13"
+                class="card-img-top img-thumbnail" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Orange</h5>
+                <p class="card-text">80 per 1kg</p>
+                <div class="count">
+                    <button class="p-2" id="incre4">+</button>
+                    <p class="m-0" id="count4">0</p>
+                    <button class="p-2" id="decre4">-</button>
+                </div>
+
+                <button id="click4" class="btn btn-primary mt-2">Buy Now</button>
+            </div>
+        </div>
+
+
+        <div data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-delay="80"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out" class="card" style="width: 18rem;  margin-top: 30px;box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
+            <img src="https://avatars.mds.yandex.net/i?id=b83f99c0becc5be63ef9b53b74740462858f34f5-5614810-images-thumbs&n=13"
+                class="card-img-top img-thumbnail" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Pineapple </h5>
+                <p class="card-text">250 per 1kg</p>
+                <div class="count">
+                    <button class="p-2" id="incre5">+</button>
+                    <p class="m-0" id="count5">0</p>
+                    <button class="p-2" id="decre5">-</button>
+                </div>
+
+                <button  id="click5" class="btn btn-primary mt-2">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="mainbill">
+        <div data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-delay="80"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out" class="childbill">
+            <h2 class="text-center p-2 m-0" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">Gadhavi Fruite Shop</h2>
+            <div style="display: flex; align-items: center; justify-content: space-around; margin-top: 20px;">
+                <h4 class="p-3 m-0" style="width: 18%; box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">Name:- </h4>
+                <h4 class="m-0 p-3" id="grahakname" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"> Parth gadhavi</h4>
+                <h4 class="p-3 m-0" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">Index number :- </h4>
+                <h4 class="m-0 p-3" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"> 1</h4>
+            </div>
+
+            <div style="display: flex; align-items: center; justify-content: space-around; margin-top: 20px;">
+                <h4 class="p-3 m-0" style="width: 17%;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">City :-</h4>
+                <h4 class="m-0 p-3" id="grahakcity" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">Dhasa</h4>
+                <h4 class="p-3 m-0" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">Phone-Number :-</h4>
+                <h4 class="m-0 p-3" id="grahaknumber" style="box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">9825984678</h4>
+            </div>
+            <div
+                style="height: 560px; width: 100%; margin-top: 30px; display: flex; align-items: center; justify-content: space-between;flex-direction: column    ;">
+                <div
+                    style="height: 50px; width: 100% ; display: flex; align-items: center; justify-content: space-around;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
+                    <div style="height: 45px; width: 10%; display: flex; align-items: center; justify-content: center;">
+                        <h6 class="m-0">SL.NO</h6>
+                    </div>
+                    <div style="height: 45px; width: 40%; display: flex; align-items: center; justify-content: center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
+                        <h6 class="m-0">Fruite Name</h6>
+                    </div>
+                    <div style="height: 45px; width: 15%; display: flex; align-items: center; justify-content: center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
+                        <h6 class="m-0">Qty.Kilo</h6>
+                    </div>
+                    <div style="height: 45px; width: 15%; display: flex; align-items: center; justify-content: center; box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
+                        <h6 class="m-0">Rate</h6>
+                    </div>
+                    <div style="height: 45px; width: 15%; display: flex; align-items: center; justify-content: center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
+                        <h6 class="m-0">Amount</h6>
+                    </div>
+                </div>
+                <div
+                    style="height: 70px; width: 100%; display: flex; align-items: center; justify-content: space-between;">
+                    <div style="height: 65px; width: 10%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="slnum1"></div>
+                    <div style="height: 65px; width: 40%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="fruitname1"></div>
+                    <div style="height: 65px; width: 15%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="qty1"></div>
+                    <div style="height: 65px; width: 15%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="rate1"></div>
+                    <div style="height: 65px; width: 15%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="amount1"></div>
+
+
+
+
+                </div>
+                <div
+                    style="height: 70px; width: 100%; display: flex; align-items: center; justify-content: space-between;">
+                    <div style="height: 65px; width: 10%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="slnum2"></div>
+                    <div style="height: 65px; width: 40%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="fruitname2"></div>
+                    <div style="height: 65px; width: 15%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="qty2"></div>
+                    <div style="height: 65px; width: 15%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="rate2"></div>
+                    <div style="height: 65px; width: 15%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="amount2"></div>
+
+
+
+
+                </div>
+                <div
+                    style="height: 70px; width: 100%; display: flex; align-items: center; justify-content: space-between;">
+                    <div style="height: 65px; width: 10%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="slnum3"></div>
+                    <div style="height: 65px; width: 40%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="fruitname3"></div>
+                    <div style="height: 65px; width: 15%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="qty3"></div>
+                    <div style="height: 65px; width: 15%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="rate3"></div>
+                    <div style="height: 65px; width: 15%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="amount3"></div>
+
+
+
+
+                </div>
+                <div
+                    style="height: 70px; width: 100%; display: flex; align-items: center; justify-content: space-between;">
+                    <div style="height: 65px; width: 10%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="slnum4"></div>
+                    <div style="height: 65px; width: 40%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="fruitname4"></div>
+                    <div style="height: 65px; width: 15%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="qty4"></div>
+                    <div style="height: 65px; width: 15%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="rate4"></div>
+                    <div style="height: 65px; width: 15%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="amount4"></div>
+
+
+
+
+                </div>
+
+                <div
+                    style="height: 70px; width: 100%; display: flex; align-items: center; justify-content: space-between;">
+                    <div style="height: 65px; width: 10%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="slnum5"></div>
+                    <div style="height: 65px; width: 40%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="fruitname5"></div>
+                    <div style="height: 65px; width: 15%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="qty5"></div>
+                    <div style="height: 65px; width: 15%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="rate5"></div>
+                    <div style="height: 65px; width: 15%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="amount5"></div>
+
+
+
+
+                </div>
+                <div
+                    style="height: 70px; width: 100%;  display: flex; align-items: center; justify-content: space-between;">
+                    <div style="height: 65px; width: 70%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
+                        <h5 class="m-0 finaltotal">Click To Check Your Buy Final Total</h5>
+                    </div>
+                    <div style="height: 65px; width: 30%; display:flex; align-items:center; justify-content:center;box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;"
+                        id="total"></div>
+
+
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+
+
+
+        let grahakname = document.getElementById('grahakname');
+        let grahakcity = document.getElementById('grahakcity');
+        let grahaknumber = document.getElementById('grahaknumber');
+
+        let Submitbtn = document.getElementById('submit1');
+        Submitbtn.addEventListener('click', () => {
+            let Customername = document.getElementById('Customername').value;
+            let Customercity = document.getElementById('Customercity').value;
+            let Customernumber = document.getElementById('Customernumber').value;
+
+
+            grahakname.textContent = Customername;
+            grahakcity.textContent = Customercity;
+            grahaknumber.textContent = Customernumber;
+
+            console.log(Customername);
+            console.log(Customercity);
+            console.log(Customernumber);
+
+        })
+
+
+
+
+
+        let buttonbuy1 = document.getElementById('click1');
+        let buttonbuy2 = document.getElementById('click2');
+        let buttonbuy3 = document.getElementById('click3');
+        let buttonbuy4 = document.getElementById('click4');
+        let buttonbuy5 = document.getElementById('click5');
+
+
+        let count1 = document.getElementById('count1');
+        let count2 = document.getElementById('count2');
+        let count3 = document.getElementById('count3');
+        let count4 = document.getElementById('count4');
+        let count5 = document.getElementById('count5');
+
+
+        let incre1 = document.getElementById('incre1');
+        let incre2 = document.getElementById('incre2');
+        let incre3 = document.getElementById('incre3');
+        let incre4 = document.getElementById('incre4');
+        let incre5 = document.getElementById('incre5');
+
+
+        let decre1 = document.getElementById('decre1');
+        let decre2 = document.getElementById('decre2');
+        let decre3 = document.getElementById('decre3');
+        let decre4 = document.getElementById('decre4');
+        let decre5 = document.getElementById('decre5');
+
+        let number = 1;
+        let number2 = 1;
+        let number3 = 1;
+        let number4 = 1;
+        let number5 = 1;
+
+
+        function add1() {
+
+            return number++;
+        }
+        function add2() {
+            return number2++;
+        }
+
+        function add3() {
+            return number3++;
+        }
+        function add4() {
+            return number4++;
+        }
+        function add5() {
+            return number5++;
+        }
+
+
+        function minus1() {
+            return number--;
+        }
+        function minus2() {
+            return number2--;
+        }
+
+        function minus3() {
+            return number3--;
+        }
+        function minus4() {
+            return number4--;
+        }
+        function minus5() {
+            return number5--;
+        }
+
+
+        incre1.addEventListener('click', () => {
+            let final1 = add1();
+            console.log(final1);
+            count1.innerHTML = final1;
+        })
+        incre2.addEventListener('click', () => {
+            let final2 = add2();
+            console.log(final2);
+            count2.innerHTML = final2
+
+        })
+        incre3.addEventListener('click', () => {
+            let final3 = add3();
+            console.log(final3);
+            count3.innerHTML = final3
+
+        })
+        incre4.addEventListener('click', () => {
+            let final4 = add4();
+            console.log(final4);
+            count4.innerHTML = final4
+        })
+        incre5.addEventListener('click', () => {
+            let final5 = add5();
+            console.log(final5);
+            count5.innerHTML = final5
+
+        })
+        let totalfullbill = document.getElementById('total');
+
+
+
+
+        buttonbuy1.addEventListener('click', () => {
+
+            let total1 = (number - 1) * 150;
+
+
+
+
+            console.log(total1);
+
+            let fruiteapple = 'Apple';
+            let slnumber = 1;
+            let quantity = number - 1;
+            let applerate = 150;
+
+
+            slnum1.textContent = slnumber;
+            fruitname1.textContent = fruiteapple;
+            qty1.textContent = quantity;
+            rate1.textContent = applerate;
+            amount1.textContent = total1;
+
+
+
+            // let username = parseFloat(prompt('Enter Your Name :-'));
+
+        })
+
+
+        buttonbuy2.addEventListener('click', () => {
+
+
+            let fruiteapple = 'Apple';
+            let slnumber = 1;
+            let quantity = number - 1;
+            let applerate = 150;
+            let total1 = (number - 1) * 150;
+
+
+            slnum1.textContent = slnumber;
+            fruitname1.textContent = fruiteapple;
+            qty1.textContent = quantity;
+            rate1.textContent = applerate;
+            amount1.textContent = total1;
+
+            let total2 = (number2 - 1) * 100;
+
+
+
+
+
+            console.log(total2);
+
+            let fruitebanana = 'Banana';
+            let slnumber2 = 2;
+            let quantity2 = number2 - 1;
+            let bananarate2 = 100;
+
+
+            slnum2.textContent = slnumber2;
+            fruitname2.textContent = fruitebanana;
+            qty2.textContent = quantity2;
+            rate2.textContent = bananarate2;
+            amount2.textContent = total2;
+
+
+        })
+
+        buttonbuy3.addEventListener('click', () => {
+
+            let total1 = (number - 1) * 150;
+            let total2 = (number2 - 1) * 100;
+            let total3 = (number3 - 1) * 200;
+
+
+
+            console.log(total3);
+
+            let fruiteapple = 'Apple';
+            let slnumber = 1;
+            let quantity = number - 1;
+            let applerate = 150;
+            slnum1.textContent = slnumber;
+            fruitname1.textContent = fruiteapple;
+            qty1.textContent = quantity;
+            rate1.textContent = applerate;
+            amount1.textContent = total1;
+
+
+            let fruitebanana = 'Banana';
+            let slnumber2 = 2;
+            let quantity2 = number2 - 1;
+            let bananarate2 = 100;
+
+
+            slnum2.textContent = slnumber2;
+            fruitname2.textContent = fruitebanana;
+            qty2.textContent = quantity2;
+            rate2.textContent = bananarate2;
+            amount2.textContent = total2;
+
+            let fruitekiwi = 'Kiwi';
+            let slnumber3 = 3;
+            let quantity3 = number3 - 1;
+            let kiwirate2 = 200;
+
+
+            slnum3.textContent = slnumber3;
+            fruitname3.textContent = fruitekiwi;
+            qty3.textContent = quantity3;
+            rate3.textContent = kiwirate2;
+            amount3.textContent = total3;
+
+        })
+
+        buttonbuy4.addEventListener('click', () => {
+
+            let total1 = (number - 1) * 150;
+            let total2 = (number2 - 1) * 100;
+            let total3 = (number3 - 1) * 200;
+            let total4 = (number4 - 1) * 80;
+
+            let fruiteapple = 'Apple';
+            let slnumber = 1;
+            let quantity = number - 1;
+            let applerate = 150;
+            slnum1.textContent = slnumber;
+            fruitname1.textContent = fruiteapple;
+            qty1.textContent = quantity;
+            rate1.textContent = applerate;
+            amount1.textContent = total1;
+
+
+            let fruitebanana = 'Banana';
+            let slnumber2 = 2;
+            let quantity2 = number2 - 1;
+            let bananarate2 = 100;
+
+
+            slnum2.textContent = slnumber2;
+            fruitname2.textContent = fruitebanana;
+            qty2.textContent = quantity2;
+            rate2.textContent = bananarate2;
+            amount2.textContent = total2;
+
+
+            let fruitekiwi = 'Kiwi';
+            let slnumber3 = 3;
+            let quantity3 = number3 - 1;
+            let kiwirate2 = 200;
+
+
+            slnum3.textContent = slnumber3;
+            fruitname3.textContent = fruitekiwi;
+            qty3.textContent = quantity3;
+            rate3.textContent = kiwirate2;
+            amount3.textContent = total3;
+
+
+            console.log(total4);
+
+            let fruiteorange = 'Orange';
+            let slnumber4 = 4;
+            let quantity4 = number4 - 1;
+            let orangerate2 = 80;
+
+
+            slnum4.textContent = slnumber4;
+            fruitname4.textContent = fruiteorange;
+            qty4.textContent = quantity4;
+            rate4.textContent = orangerate2;
+            amount4.textContent = total4;
+
+
+            // let username4 = parseFloat(prompt('Enter Your Name :-'));
+        })
+
+
+        buttonbuy5.addEventListener('click', () => {
+
+            let total1 = (number - 1) * 150;
+            let total2 = (number2 - 1) * 100;
+            let total3 = (number3 - 1) * 200;
+            let total4 = (number4 - 1) * 80;
+            let total5 = (number5 - 1) * 250;
+
+            let fruiteapple = 'Apple';
+            let slnumber = 1;
+            let quantity = number - 1;
+            let applerate = 150;
+            slnum1.textContent = slnumber;
+            fruitname1.textContent = fruiteapple;
+            qty1.textContent = quantity;
+            rate1.textContent = applerate;
+            amount1.textContent = total1;
+
+            let fruitebanana = 'Banana';
+            let slnumber2 = 2;
+            let quantity2 = number2 - 1;
+            let bananarate2 = 100;
+
+
+            slnum2.textContent = slnumber2;
+            fruitname2.textContent = fruitebanana;
+            qty2.textContent = quantity2;
+            rate2.textContent = bananarate2;
+            amount2.textContent = total2;
+
+
+            let fruitekiwi = 'Kiwi';
+            let slnumber3 = 3;
+            let quantity3 = number3 - 1;
+            let kiwirate2 = 200;
+
+
+            slnum3.textContent = slnumber3;
+            fruitname3.textContent = fruitekiwi;
+            qty3.textContent = quantity3;
+            rate3.textContent = kiwirate2;
+            amount3.textContent = total3;
+
+
+
+            let fruiteorange = 'Orange';
+            let slnumber4 = 4;
+            let quantity4 = number4 - 1;
+            let orangerate2 = 80;
+
+
+            slnum4.textContent = slnumber4;
+            fruitname4.textContent = fruiteorange;
+            qty4.textContent = quantity4;
+            rate4.textContent = orangerate2;
+            amount4.textContent = total4;
+
+
+
+            console.log(total5);
+
+            let fruitepineapple = 'Pineapple';
+            let slnumber5 = 5;
+            let quantity5 = number5 - 1;
+            let pineapplerate2 = 250;
+
+
+            slnum5.textContent = slnumber5;
+            fruitname5.textContent = fruitepineapple;
+            qty5.textContent = quantity5;
+            rate5.textContent = pineapplerate2;
+            amount5.textContent = total5;
+            // let username5 = parseFloat(prompt('Enter Your Name :-'));
+        })
+
+
+
+
+
+
+        decre1.addEventListener('click', () => {
+            if (number >= 2) {
+                let final6 = minus1();
+                console.log(final6 - 2);
+                count1.innerHTML = (final6 - 2)
+            }
+
+
+        })
+        decre2.addEventListener('click', () => {
+            if (number2 >= 2) {
+                let final7 = minus2();
+
+                console.log(final7 - 2);
+                count2.innerHTML = (final7 - 2)
+            }
+        })
+
+        decre3.addEventListener('click', () => {
+            if (number3 >= 2) {
+                let final8 = minus3();
+
+                console.log(final8);
+                count3.innerHTML = (final8 - 2)
+            }
+
+        })
+
+        decre4.addEventListener('click', () => {
+            if (number4 >= 2) {
+                let final9 = minus4();
+
+                console.log(final9);
+                count4.innerHTML = (final9 - 2)
+            }
+
+        })
+        decre5.addEventListener('click', () => {
+            if (number5 >= 2) {
+                let final10 = minus5();
+
+                console.log(final10);
+                count5.innerHTML = (final10 - 2)
+            }
+
+        })
+
+
+
+        let finaltotal1 = document.querySelector('.finaltotal');
+        finaltotal1.addEventListener('click', () => {
+            let total1 = (number - 1) * 150;
+            let total2 = (number2 - 1) * 100;
+            let total3 = (number3 - 1) * 200;
+            let total4 = (number4 - 1) * 80;
+            let total5 = (number5 - 1) * 250;
+
+
+            let result = total1 + total2 + total3 + total4 + total5;
+            // console.log(`final answer is ${result}`);
+
+            totalfullbill.textContent = result;
+
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>
